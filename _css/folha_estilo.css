@@ -1,0 +1,54 @@
+/* Folha de Estilo de Página SIGAE 2018 */
+
+body {
+    background-color: #6191A8;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo {
+    margin: 10px 0px 0px -5px;
+    position: absolute;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px; 
+}
+
+.cabeca {
+    width: 800px;
+    margin-top: 0px;
+    margin-right: 0px;
+    position: absolute;
+    background-color: #E4EEF0;
+    margin: 10px 0px 0px 250px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    padding-top: 15px;
+}
+/*--------------------- Menu --------------------*/
+.menu {
+    /* Todos os alvos de Menu, ficaram contidos nesta div */
+    background-color: grey;
+    position: absolute;
+    margin: 175px 0px 0px -5px;
+    width: 218px;
+    padding-right: 0px;
+}
+
+nav#menuprincipal ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+/*-------------------- Conteúdo Geral -------------*/
+.cargatotal {
+    /* Aqui contera todos os formulários e demais informações do sistema*/
+    background-color: #E4EEF0;
+    width: 1000px;
+    position: absolute;
+    margin: 140px 0px 0px 250px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}

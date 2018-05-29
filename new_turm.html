@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> SiGA-E - Sistema de Gestão da Administração Escolar. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/folha_estilo.css"
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div id="logo">
+        <img align="center" src="_img/logo.png">
+    </div>
+    <div class="cabeca">
+
+        <h2> SiGA-E - Sistema de Gestão da Administraçaõ Escolar </h2>
+        <p><b> Centro de Ensino em Tecnologia Kabum. </b></p>
+
+    </div>
+        <div class="menu">
+            <nav id="menuprincipal">
+                <ul>
+                <li><a href="index.html"> Início </a> </li>
+                <li><a href="search_student.jsp"> Pesquisar </a></li>
+                <li><a href="cadastro_estudante.html"> Matricular Esutdante</a></li>
+                <li><a href="#"> Enturmação </a></li>
+                        <ul>
+                            <li><a href="new_turm.html"> Criar Turma </a></li>
+                            <li><a href="#"> Enturmar Estudante </a></li>
+                            <li><a href="#"> Ajuste de Turma </a></li>
+                        </ul>
+                    <li><a href="#"> Relatórios </a></li>
+                        <ul>
+                            <li><a href="#"> Lista de Enturmação </a></li>
+                            <li><a href="#"> Ficha de Matricula </a></li>
+                            <li><a href="#"> Ficha de Transferência </a></li>
+                        </ul>
+                    <li><a href="#"> Histórico Escolar </a></li>
+                    <li><a href="#"> Ajuda </a></li>
+                    <li><a href="#"> Sair </a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <div class="cargatotal">
+            <br>
+            <br>
+            <a href="delet_turma.html"><input type="button" value="Excluir Turma"></a>
+            <div id="novaturma">
+                <form action="newturma.jsp" method="POST">
+                    <br>
+                    Código da Turma: <input type="text" name="cod_turma" size="4" maxlength="5" required="required">
+                    Código da Escola:
+                    <input type="text" name="INEP" size="10" maxlength="8" required="required">
+                    Modalidade de Ensino: 
+                    <select name="modalidade_ensino_pretendida">
+                            <option>  </option>
+                            <option value="Educação de Jovens, Adultos e Idosos"> Educação de Jovens Adultos e Idosos. </option>
+                            <option value="Fundamental Regular"> Ensino Fundamental </option>
+                        </select>
+                    <br>
+                    Ano Letivo: <input type="text" name="ano_letivo" size="5" maxlength="4" required="required">
+                    Ano/Fase: 
+                    <select name="ano_fase_matricula">
+                            <option >  </option>
+                            <option value="1º Ano"> EF. 1º Ano </option>
+                            <option value="2º Ano"> EF. 2º Ano </option>
+                            <option value="3º Ano"> EF. 3º Ano </option>
+                            <option value="4º Ano"> EF. 4º Ano </option>
+                            <option value="5º Ano"> EF. 5º Ano </option>
+                            <option value="6º Ano"> EF. 6º Ano </option>
+                            <option value="7º Ano"> EF. 7º Ano </option>
+                            <option value="8º Ano"> EF. 8º Ano </option>
+                            <option value="9º Ano"> EF. 9º Ano </option>
+                            <option value="EJAI - Modulada"> EJAI - Modulada </option>
+                            <option value="EJAI - Módulo III"> EJAI - Módulo III </option>
+                            <option value="EJAI - Módulo IV"> EJAI - Módulo IV </option>
+                            <option value="EJAI - Módulo V"> EJAI - Módulo V </option>
+                        </select>
+                    Turma: <input type="text" name="turma" size="2" maxlength="1" required="required">
+                    <br>
+                    Turno: 
+                        <input type="radio" name="turno" value="Manhã"> Manhã 
+                        <input type="radio" name="turno" value="Tarde"> Tarde 
+                        <input type="radio" name="turno" value="Noite"> Noite 
+                        <input type="radio" name="turno" value="Manhã"> Integral.
+                    <br><br>
+                    <div id="botao" align="center">
+                            <input type="submit" name="enviar" value="Criar"> 
+                            <input type="reset" name="limpar" value="Limpar">
+                        </div>
+                </form>   
+        </div>
+        <br>
+        <br>
+          
+</body>
+</html>

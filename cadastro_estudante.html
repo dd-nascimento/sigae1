@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> SiGA-E - Sistema de Gestão da Administração Escolar. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/folha_estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div id="logo">
+        <img align="center" src="_img/logo.png">
+    </div>
+    <div class="cabeca">
+
+        <h2> SiGA-E - Sistema de Gestão da Administraçaõ Escolar </h2>
+        <p><b> Centro de Ensino em Tecnologia Kabum. </b></p>
+
+    </div>
+        <div class="menu">
+            <nav id="menuprincipal">
+                <ul>
+                <li><a href="index.html"> Início </a> </li>
+                <li><a href="search_student.jsp"> Pesquisar </a></li>
+                <li><a href="cadastro_estudante.html"> Matricular Esutdante</a></li>
+                <li><a href="#"> Enturmação </a></li>
+                        <ul>
+                            <li><a href="new_turm.html"> Criar Turma </a></li>
+                            <li><a href="#"> Enturmar Estudante </a></li>
+                            <li><a href="#"> Ajuste de Turma </a></li>
+                        </ul>
+                    <li><a href="#"> Relatórios </a></li>
+                        <ul>
+                            <li><a href="#"> Lista de Enturmação </a></li>
+                            <li><a href="#"> Ficha de Matricula </a></li>
+                            <li><a href="#"> Ficha de Transferência </a></li>
+                        </ul>
+                    <li><a href="#"> Histórico Escolar </a></li>
+                    <li><a href="#"> Ajuda </a></li>
+                    <li><a href="#"> Sair </a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <div class="cargatotal">
+                <form action="_java/matricula.jsp" method="POST">
+                    Ficha de Matricula do Estudante.
+                    <br>
+                    <br>
+                    <br>
+                    Nome do Estudante: <input type="text" name="nome_estudante" size="15" maxlength="10" required="required">
+                    Sobrenome: <input type="text" name="sobrenome_estudante" size="50" maxlength="150" required="required">
+                    <br>
+                    Data de Nascimento: <input type="date" name="dta_nasc_estudante" required="required">
+                <br>
+                    Mãe: <input type="text" name="mae_estundate" size="60" maxlength="100" required="required">
+                    <br>
+                    Pai: <input type="text" name="pai_estudante" size="60" maxlength="100">
+                    <br>
+                    Responsável: <input type="text" name="responsavel_estudante" size="50" maxlength="100">
+                    <br><br>
+                    Condição de Ingresso na Rede:
+                        <select name="condicao_ingresso">
+                            <option> </option>
+                            <option value="Nunca Estudou"> Nunca Estudou. </option>
+                            <option value="Aprovado(a) de outra rede"> Aprovado(a) de outra rede. </option>
+                            <option value="Desistente no ano anterior"> Desistente no ano anterior. </option>
+                        </select>
+                    Cor: <select name="cor_estudante">
+                            <option >  </option>
+                            <option value="Preta"> Negra </option>
+                            <option value="Branca"> Branca </option>
+                            <option value="Amarelo"> Amarelo </option>
+                            <option value="Parda"> Parda </option>
+                        </select>
+                        <br><br>
+                    Documentação do (a) Estudante. 
+                    <br> <br>
+                    RG <br>
+                    Número: <input type="text" name="numero_rg" size="7" maxlength="10"> | 
+                    Órgão Emissor: <input type="text" name="orgao_rg" size="40" maxlength="60">
+                    Data de Expedição: <input type="date" name="dta_exped_rg">
+                    <br>
+                    CPF: <input type="text" name="cpf" size="13" maxlength="11">
+                    <br><br>
+                    Certidão de Nascimento
+                    <br>
+                    Cartório: <input type="text" name="nome_cartorio" size="50" maxlength="100" required="required"><br>
+                    Folha: <input type="text" name="folha_certidao" size="4" maxlength="5" required="required">
+                    Termo: <input type="text" name="termo_certidao" size="4" maxlength="5" required="required">
+                    <br> <br>
+                    Cidade de Emissão:<br>
+                    <input type="text" name="cidade_certidao" size="30" maxlength="50" required="required">
+                    UF: <select name="estado_certidao">
+                            <option>  </option> 
+                            <option value="Acre"> AC </option>
+                            <option value="Alagoas"> AL </option>
+                            <option value="Amapá"> AP </option>
+                            <option value="Amazonas"> AM </option>
+                            <option value="Bahia"> BA </option>
+                            <option value="Ceará"> CE </option>
+                            <option value="Distrito Federal"> DF </option>
+                            <option value="Espírito Santo"> ES </option>
+                            <option value="Goiás"> GO </option>
+                            <option value="Maranhão"> MA</option>
+                            <option value="Mato Grosso"> MT </option>
+                            <option value="Mato Grosso do Sul"> MS </option>
+                            <option value="Minas Gerais"> MG </option>
+                            <option value="Pará"> PA </option>
+                            <option value="Paraíba"> PB </option>
+                            <option value="Paraná"> PR </option>
+                            <option value="Pernambuco"> PE </option>
+                            <option value="Piauí"> PI </option>
+                            <option value="Rio de Janeiro"> RJ </option>
+                            <option value="Rio Grande do Norte"> RN </option>
+                            <option value="Rio Grande do Sul"> RS </option>
+                            <option value="Rondônia"> RO </option>
+                            <option value="Roraima"> RR </option>
+                            <option value="Santa Catarina"> SC </option>
+                            <option value="São Paulo"> SP </option>
+                            <option value="Sergipe">SE </option>
+                            <option value="Tocantins">TO </option>                                        
+                        </select>
+                        <br>
+                    Data de Emissao: <input type="date" name="dta_certidao">
+
+                    <br> <br> 
+
+                    Endereço do (a) Estudante:<br>
+                    CEP: <input type="text" name="cep_estudante" size="9" maxlength="8" required="required"> | 
+                    Logradouro <input type="text" name="logradouro_estudante" size="50" maxlength="80" required="required">
+                    <br>
+                    Número: <input type="text" name="numero_estudante" size="5" maxlength="4" required="required">
+                    Bairro: <input type="text" name="bairro" size="25" maxlength="50" required="required">
+                    <br>
+                    Complemento <input type="text" size="90" maxlength="150">
+                    <br>
+                    Estado: <select name="estado_certidao">
+                            <option>  </option> 
+                            <option value="Acre"> AC </option>
+                            <option value="Alagoas"> AL </option>
+                            <option value="Amapá"> AP </option>
+                            <option value="Amazonas"> AM </option>
+                            <option value="Bahia"> BA </option>
+                            <option value="Ceará"> CE </option>
+                            <option value="Distrito Federal"> DF </option>
+                            <option value="Espírito Santo"> ES </option>
+                            <option value="Goiás"> GO </option>
+                            <option value="Maranhão"> MA</option>
+                            <option value="Mato Grosso"> MT </option>
+                            <option value="Mato Grosso do Sul"> MS </option>
+                            <option value="Minas Gerais"> MG </option>
+                            <option value="Pará"> PA </option>
+                            <option value="Paraíba"> PB </option>
+                            <option value="Paraná"> PR </option>
+                            <option value="Pernambuco"> PE </option>
+                            <option value="Piauí"> PI </option>
+                            <option value="Rio de Janeiro"> RJ </option>
+                            <option value="Rio Grande do Norte"> RN </option>
+                            <option value="Rio Grande do Sul"> RS </option>
+                            <option value="Rondônia"> RO </option>
+                            <option value="Roraima"> RR </option>
+                            <option value="Santa Catarina"> SC </option>
+                            <option value="São Paulo"> SP </option>
+                            <option value="Sergipe">SE </option>
+                            <option value="Tocantins">TO </option>                                        
+                        </select>
+                        <br>
+                    Cidade: <input type="text" name="cidade_reside" size="25" maxlength="50" required="required">
+                    <br><br>
+                    <b> Informações de Ensino </b>
+                    Turno pretendido:<br>
+                    <input type="radio" name="turno_pretendido" value="Manhã"> Manhã <br>
+                    <input type="radio" name="turno_pretendido" value="Tarde"> Tarde <br>
+                    <input type="radio" name="turno_pretendido" value="Noite"> Noite <br>
+                    <input type="radio" name="turno_pretendido" value="Manhã"> Integral.
+                    <br><br>
+                    Modalidade de Ensino pretendida:
+                    <select name="modalidade_ensino_pretendida">
+                            <option>  </option>
+                            <option value="Educação de Jovens, Adultos e Idosos"> Educação de Jovens Adultos e Idosos. </option>
+                            <option value="Fundamental Regular"> Ensino Fundamental </option>
+                        </select>
+                        Ano/Fase: 
+                        <select name="ano_fase_matricula">
+                            <option >  </option>
+                            <option value="1º Ano"> EF. 1º Ano </option>
+                            <option value="2º Ano"> EF. 2º Ano </option>
+                            <option value="3º Ano"> EF. 3º Ano </option>
+                            <option value="4º Ano"> EF. 4º Ano </option>
+                            <option value="5º Ano"> EF. 5º Ano </option>
+                            <option value="6º Ano"> EF. 6º Ano </option>
+                            <option value="7º Ano"> EF. 7º Ano </option>
+                            <option value="8º Ano"> EF. 8º Ano </option>
+                            <option value="9º Ano"> EF. 9º Ano </option>
+                            <option value="EJAI - Modulada"> EJAI - Modulada </option>
+                            <option value="EJAI - Módulo III"> EJAI - Módulo III </option>
+                            <option value="EJAI - Módulo IV"> EJAI - Módulo IV </option>
+                            <option value="EJAI - Módulo V"> EJAI - Módulo V </option>
+                        </select>
+                        <br><br>
+                    <div id="botao" align="center">
+                        <button type="submit" class="btn btn-primary"> Cadastrar. </button> 
+                        <button type="reset" class="btn btn-danger"> Limpar. </button>
+                    </div>
+                    <br>
+                </form>
+        </div>    
+        </div>
+        <br>
+        <br>
+          
+</body>
+</html>

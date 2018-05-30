@@ -3,8 +3,8 @@
 body {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-image: url(_img/login.jpg);
-    background-repeat: no-repeat;
+    background-color: #6191A8;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .form-login{

@@ -39,7 +39,7 @@
                         </ul>
                     <li><a href="#"> Histórico Escolar </a></li>
                     <li><a href="#"> Ajuda </a></li>
-                    <li><a href="#"> Sair </a></li>
+                    <li><a href="login.html"> Sair </a></li>
                 </ul>
             </nav>
         </div>
@@ -49,10 +49,13 @@
             <br>
             <br>
             <a href="delet_turma.html"><input type="button" value="Excluir Turma"></a>
-            <div id="novaturma">
+            <div class="container">
                 <form action="newturma.jsp" method="POST">
                     <br>
-                    Código da Turma: <input type="text" name="cod_turma" size="4" maxlength="5" required="required">
+                    Código da Turma: 
+                    <label for="text">
+                    <input type="text" name="cod_turma" class="form-control" size="4" maxlength="5" required="required">
+                    </label>
                     Código da Escola:
                     <input type="text" name="INEP" size="10" maxlength="8" required="required">
                     Modalidade de Ensino: 
